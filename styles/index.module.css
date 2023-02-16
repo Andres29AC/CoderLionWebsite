@@ -1,0 +1,29 @@
+
+.overlapGrid{
+    --gradient: linear-gradient(
+      45deg,
+      #845ec2,
+      #d65db1,
+      #ff5f91,
+      #ff9671,
+      #ffc75f,
+      #f9f871
+
+    );
+   /* background="radial-gradient(circle, rgba(144,63,251,1) 0%, rgba(70,233,252,1) 100%);" */
+   /* animation="bg-animation 20s infinite alternate;" */
+    background:#ddd;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
