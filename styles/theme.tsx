@@ -7,7 +7,7 @@ const theme = extendTheme({
         margin: 0,
         padding: 0,
         minHeight: '100vh',
-        color: 'white',
+        color: 'black',
         background: '#ddd',
         '--gradient': 'linear-gradient(45deg, #845ec2, #d65db1, #ff5f91, #ff9671, #ffc75f, #f9f871)',
         backgroundImage: 'var(--gradient)',
