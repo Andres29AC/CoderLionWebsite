@@ -33,13 +33,13 @@ export default function Home() {
         <Text fontSize={"small"} textAlign="center">Desarrollador de software.Aqui encontraras algunos proyectos</Text>
         </div>
         <div className={styles.icons}>
-        <a href="https://github.com/Andres29AC" target={"_blank"}  >
-          <Icon  as={VscGithub} boxSize="40px" color="black"/>
+        <a href="https://github.com/Andres29AC">
+          <Icon target={"_blank"}  as={VscGithub} boxSize="40px" color="black"/>
         </a>
         </div>
         <div className={styles.icons} >
-        <a href="mailto:lionAS_45@hotmail.com" target="_blank">
-          <Icon  as={MdAttachEmail}  boxSize="40px" color="black"/>
+        <a href="mailto:lionAS_45@hotmail.com">
+          <Icon target={"_blank"} as={MdAttachEmail}  boxSize="40px" color="black"/>
         </a>
         </div>
       </VStack>
