@@ -1,10 +1,12 @@
 import Project from "@/components/project";
 import { Grid, Heading, VStack, Image, Text } from "@chakra-ui/react";
 import styles from '../styles/index.module.css';
+import {Icon} from "@chakra-ui/react";
+import { VscGithub } from "react-icons/vsc";
+import { MdAttachEmail } from "react-icons/md";
 export default function Home() {
   return(
     <Grid 
-    className={styles.overlapGrid} 
     placeItems="center"
     //NOTE: Este pading se activara cuando estemos
     //NOTE: por columnas 
@@ -26,8 +28,20 @@ export default function Home() {
         gridArea="i"
       />
       <VStack gridArea="t">
-        <Heading fontSize={"2xl"}>Andre Amaro Castillo</Heading>
-        <Text>Este es mi portafolio</Text>
+        <div className={styles.card}>
+        <Heading fontSize={"2xl"} textAlign="center">Andre Amaro Castillo</Heading>
+        <Text fontSize={"small"} textAlign="center">Desarrollador de software.Aqui encontraras algunos proyectos</Text>
+        </div>
+        <div className={styles.icons}>
+        <a href="https://github.com/Andres29AC" target={"_blank"}  >
+          <Icon  as={VscGithub} boxSize="40px" color="black"/>
+        </a>
+        </div>
+        <div className={styles.icons} >
+        <a href="mailto:lionAS_45@hotmail.com" target="_blank">
+          <Icon  as={MdAttachEmail}  boxSize="40px" color="black"/>
+        </a>
+        </div>
       </VStack>
       <Project text="gitHub"  link="https://www.google.com/"gridArea="p1"/>
       <Project text="proyecto 2" link="https://www.google.com/"gridArea="p2"/>
@@ -42,3 +56,7 @@ export default function Home() {
     </Grid>
   );
 }
+
+
+
+
