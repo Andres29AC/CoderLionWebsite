@@ -1,9 +1,6 @@
 import Project from "@/components/project";
-import { Grid, Heading, VStack, Image, Text } from "@chakra-ui/react";
-import styles from '../styles/index.module.css';
-import {Icon} from "@chakra-ui/react";
-import { VscGithub } from "react-icons/vsc";
-import { MdAttachEmail } from "react-icons/md";
+import { Grid, Image} from "@chakra-ui/react";
+import Informacion from "@/components/informacion";
 export default function Home() {
   return(
     <Grid 
@@ -22,27 +19,12 @@ export default function Home() {
     >
       <Image
         borderRadius='full'
-        boxSize='110px'
+        boxSize='150px'
         src='/tokuno2.jpg'
         alt='CoderLion'
         gridArea="i"
       />
-      <VStack gridArea="t">
-        <div className={styles.card}>
-        <Heading fontSize={"2xl"} textAlign="center">Andre Amaro Castillo</Heading>
-        <Text fontSize={"small"} textAlign="center">Desarrollador de software.Aqui encontraras algunos proyectos</Text>
-        </div>
-        <div className={styles.icons}>
-        <a href="https://github.com/Andres29AC">
-          <Icon target={"_blank"}  as={VscGithub} boxSize="40px" color="black"/>
-        </a>
-        </div>
-        <div className={styles.icons} >
-        <a href="mailto:lionAS_45@hotmail.com">
-          <Icon target={"_blank"} as={MdAttachEmail}  boxSize="40px" color="black"/>
-        </a>
-        </div>
-      </VStack>
+      <Informacion />
       <Project text="gitHub"  link="https://www.google.com/"gridArea="p1"/>
       <Project text="proyecto 2" link="https://www.google.com/"gridArea="p2"/>
       <Project text="proyecto 3"  link="https://www.google.com/"gridArea="p3"/>
