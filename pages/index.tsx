@@ -25,7 +25,7 @@ export default function Home() {
         gridArea="i"
       />
       <Informacion />
-      <Project text="gitHub"  link="https://www.google.com/"gridArea="p1"/>
+      <Project text="App-Preguntas"  link="https://app-preguntaskengan.netlify.app"gridArea="p1"/>
       <Project text="proyecto 2" link="https://www.google.com/"gridArea="p2"/>
       <Project text="proyecto 3"  link="https://www.google.com/"gridArea="p3"/>
       <Project text="proyecto 4" link="https://www.google.com/"gridArea="p4"/>
